@@ -86,9 +86,14 @@ https://www.virtualbox.org/wiki/Linux_Downloads
 > minikube start --cpus 2 --memory 2048 --disk-size 20g --vm-driver virtualbox -p minikube
 
 [실습내용추가]
+
 minikube start --memory 4096
+
 minikube docker-env
+
 @FOR /f "tokens=*" %i IN ('minikube docker-env') DO @%i
+
+
 
 --cpus: CPU 개수 (기본 2)  
 --memory: 메모리 크기 (기본 2048)  
